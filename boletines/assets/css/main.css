@@ -1,0 +1,180 @@
+/* Rosa #DBC2CF
+  Agua #61988E
+  Azul Petroleo #2E4756
+  Verde Azulado #16262E
+  Rosa vibrante #FF3864
+  */
+
+  /* Asi se coloca un comentario en css*/
+
+  html{
+    font-family: 'Hind Madurai', sans-serif;
+  }
+
+  a{
+    text-decoration: none; /*quitar linea que esta debajo de los links o ligas*/
+    color: #FF3864 /*cambiar el color del link*/
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  a:hover{
+    opacity: 0.5; /*con esto se modifica la opacidad de un elemento en esta caso el del link de mi pagina*/
+  }
+
+  .title{
+    text-transform: uppercase;/*esto es para que el titulo aparezca siempre en mayusculas*/
+    text-align: center;
+  }
+
+  /* esto de arriba es para cambiar la fuente del contenido de mi pagina web*/
+
+ .container{
+   background: :#61988E /* Respaldo del degradado*/
+   background: #FF5F6D;  /* fallback for old browsers */
+   background: #373B44;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   /*esto de arriba es el color degarado en la pagina*/
+   height: 100vh; /*aqui le decimos a nuestro fondo de color degradado que ocupe toda la pantalla*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .content{       /*aqui le damos el alto y ancho a lo que hay en nuestra eiqueta content, asi como el color*/
+   max-width: 980px;
+   width: 100%;
+   height: 80vh;
+   background-color: white;
+   /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color*/ /*esto es para agregar sombras*/
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   border-radius: 4px;
+   position: relative;
+   padding: 1.8em;
+   overflow: scroll;
+
+ }
+
+ .content{
+   padding: 1em;
+ }
+
+ td{
+   display: block;
+   width: 100%;
+ }
+ td:nth-of-type(1){
+   font-size: 1.5em;
+   font-weight: bold;
+   color: #5480C7;
+ }
+ th{
+   display: none;
+ }
+
+ .actions{
+   position: absolute;
+   top:1em;
+   right:1em;
+ }
+
+ .close{
+   height: 40px;
+   width: 40px;
+   color:white;
+   border-radius:50%;
+   background-color: #2E4756;
+   display: inline-block;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   font-weight: 300;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .paragraph{
+   line-height: 1.8em;
+   font-weight: 500;
+ }
+
+ .fa-star,.fa-star-o{
+   color: #F2BC0C
+ }
+
+ .table{
+   width: 100%; /*con esto se quitan los bordes de la tabla*/
+   border-spacing: 0; /*se encarga de definir el espacio del borde entre cada selda*/
+ }
+
+ .table td, .table th{
+   padding: 0.5cm;
+   text-align: left;
+ }
+
+ .table tr:nth-child(even){ background-color: #5480C7;} /*esto es para cambiar el color de un renglon en la tabla, si se le agrega "even"se cambiara de color todos los pares y si se le agrega "odd" es a los pares*/
+
+ .title-item{
+   /*border-bottom-style: solid; /*esto es para definir bordes*/
+   /*border-width: 2px; /*esto es para el grosor del borde*/
+   /*border-color: #5480C7; /*para definir el color de nuestro borde*/
+   font-size: 2em;
+   border-bottom: solid 2px #5480C7; /*esto es una shorthand property en ccs para no poner todo lo de arriva y especificar en una sola linea*/
+   padding-bottom:1em;
+   /*padding-top:2em;
+   padding: arriba derecha abajo izquierda
+   padding: arriba/abajo derecha/izquierda*/
+ }
+
+ .address{
+   font-weight: bold;
+   color: #2E4756;
+   font-size: 1.2em;
+   margin-top: 2em;
+   display: inline-block;
+ }
+
+ .main-image{
+   float: left;
+   margin-right: 1em;
+   height: 200px;
+   width: 300px;
+ }
+
+  .position{
+    background-color: #5480C7;
+    color:white;
+    padding: 0.5em;
+    border-radius: 4px; /*esto es un shorthand properti para redondear todas las esquinas una por una o con un solo valor para las 4 esquinas*/
+    /*border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em; /*esto nos sirve para redondear esquinas*/
+    margin-right: 0.5em;
+  }
+
+
+ @media(min-width:900px){
+   th{
+     display: table-cell;
+   }
+    td{
+      width: auto;
+      display: table-cell;
+    }
+    td:nth-of-type(1){
+      font-size: 1em;
+    }
+      .content{
+        padding:1.8em;
+      }
+ }
+
+ @media (main-height:550px){
+   .content{
+     height: 500px;
+   }
+ }
