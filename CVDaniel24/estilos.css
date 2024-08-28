@@ -1,0 +1,134 @@
+/* 
+    Estilos globales para toda la página
+    Se define la fuente, el color de fondo y el color del texto 
+*/
+body {
+    background-color: lightblue;
+}
+
+
+.foto{
+    width: 40%;
+    border-radius: 50px;
+
+}
+
+.nombre{
+
+    color: black;
+
+}
+
+.perfil{
+    color: black;
+}
+
+.origen{
+    color: black;
+}
+
+/* 
+    Estilos para el contenedor principal 
+    Se ajusta el ancho, el margen para centrarlo y el fondo blanco 
+*/
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+    Estilos para el encabezado del CV 
+    Se centra el texto y se agrega una línea inferior 
+*/
+header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* 
+    Estilos para el título principal (nombre) 
+    Se aumenta el tamaño y se cambia el color del texto 
+*/
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* 
+    Estilos para los párrafos en el encabezado 
+    Se reduce el margen y se ajusta el color 
+*/
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* 
+    Margen superior para cada sección del CV 
+*/
+section {
+    margin: 20px 0;
+}
+
+/* 
+    Estilos para los títulos de sección 
+    Se ajusta el tamaño, color y se agrega una línea inferior 
+*/
+h2 {
+    font-size: 1.8em;
+    color: black;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* 
+    Margen inferior para cada elemento de experiencia y educación 
+*/
+.job, .education-item {
+    margin-bottom: 15px;
+}
+
+/* 
+    Estilos para los títulos de los trabajos y educación 
+    Se ajusta el tamaño y color del texto 
+*/
+h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: black;
+}
+
+/* 
+    Margen reducido para los párrafos de descripción 
+*/
+p {
+    margin: 5px 0;
+}
+
+/* 
+    Estilos para la lista de habilidades 
+    Se elimina el estilo de lista y el margen 
+*/
+.skills ul {
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+/* 
+    Estilos para los elementos de la lista de habilidades 
+    Se ajusta el fondo, el margen y se agregan bordes redondeados 
+*/
+.skills li {
+    background: #e4e4e4;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
